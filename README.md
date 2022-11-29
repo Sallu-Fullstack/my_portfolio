@@ -1,2 +1,2 @@
 # my_portfolio.github.io
-This is Mohammed Salman, And Here is my Portfolio.
+I'm Mohammed Salman, Striving to become a Passionate FullStack Developer. You can visit my Live Portfolio 👉: https://sallu-fullstack.github.io/my_portfolio.github.io/ 
