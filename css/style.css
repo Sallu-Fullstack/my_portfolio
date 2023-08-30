@@ -171,7 +171,7 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 	width: 65vw;
 	width: calc(70vw - 100px);
 	float: right;
-	right: 50px;
+	right: 10px;
 	top: 50px;
 	bottom: 50px;
 	overflow-y: scroll;
@@ -179,7 +179,7 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 	font-size: 20px;
 	font-weight: 400;
 	padding-right: 10px;
-	padding-left: 30px;
+	padding-left: 2px;
 	transform: translateY(-380px);
     transition: all .5s ease;
 	opacity: 0;
@@ -638,7 +638,7 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 	top: -24%;
 }
 .section_header .right_hero_header{
-	width: 60%;
+	width: 70%;
 }
 .section_header .person_info{
 	position: absolute;
@@ -747,6 +747,10 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 #cv_services .section_title,
 #cv_biography .section_title{
 	margin-bottom: 43px;
+}
+
+#cv_biography a{
+	text-decoration: none;
 }
 /*------------------------------------------------------------------*/
 /*	05) Info Items
@@ -1438,6 +1442,7 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 }
 .tips_content .item_right .abs_img{
 	position: absolute;
+	border-radius: 5px;
 	top: 15px;
 	left: 15px;
 	right: 15px;
@@ -1517,7 +1522,7 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 }
 .load_more a{
 	min-width: 250px;
-	padding: 20px 40px;
+	padding: 10px 40px;
 	line-height: 26px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -1783,6 +1788,7 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
     left: 0;
     right: 0;
     bottom: 0;
+	border-radius: 5px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1945,6 +1951,15 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 @media(max-width: 1040px){
 	.deebo_fn_modalbox .box_inner{max-width: 90%;}
 	.deebo_fn_modalbox .modal_in{padding-left: 20px;padding-right: 20px;}
+	.fn__nav .next{padding-right: 66px;}
+	.fn__nav .next .arrow_wrapper{right: 20px;}
+	.fn__nav .prev{padding-left: 66px;}
+	.fn__nav .prev .arrow_wrapper{left: 20px;}
+}
+
+@media(max-width: 500px){
+	.deebo_fn_modalbox .box_inner{max-width: 95%;}
+	.deebo_fn_modalbox .modal_in{padding-left: 15px;padding-right: 15px;}
 	.fn__nav .next{padding-right: 66px;}
 	.fn__nav .next .arrow_wrapper{right: 20px;}
 	.fn__nav .prev{padding-left: 66px;}
@@ -2383,6 +2398,118 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 	}
 	.fn_cs_portfolio .portfolio_list ul li{width: 50%;}
 }
+
+@media(max-width: 500px){
+	.deebo_fn_switcher_wrap{
+		right: 15px;
+	}
+	.deebo_fn__cv{
+		width: 100%;
+		left: 10px;
+		right: 10px;
+		bottom: 10px;
+		top: 10px;
+	}
+	.deebo_fn__cv .cv__header{
+		top: 10px;
+		left: 10px;
+		bottom: 10px;
+	}
+	.deebo_fn__cv .cv__content{
+		width: calc(70vw - 40px);
+		right: 10px;
+		top: 10px;
+		bottom: 10px;
+	}
+	.deebo_fn__cv{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		padding: 20px;
+		overflow-y: scroll;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: 0;
+	}
+	.deebo_fn_cv .closer{
+		z-index: 999;
+	}
+	.deebo_fn__cv{
+		scrollbar-width: thin;
+		scrollbar-color: #000 #000;
+	}
+	.deebo_fn__cv::-webkit-scrollbar{
+		width: 8px;
+		cursor: pointer;
+	}
+	.deebo_fn__cv:-webkit-scrollbar-track{
+		background: #000;
+	}
+	.deebo_fn__cv::-webkit-scrollbar-thumb{
+		background-color: var(--mc);
+		border-radius: 10px;
+	}
+	.deebo_fn__cv .cv__header{
+		width: 100%;
+		position: relative;
+		margin-bottom: 20px;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		transform: translateX(380px);
+	}
+	.deebo_fn__cv .cv__content{
+		width: 100%;
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		padding: 0;
+		height: auto;
+		overflow: initial;
+		float: left;
+		clear: both;
+		min-height: fit-content;
+		max-height: inherit;
+		transform: translateX(-380px);
+	}
+	
+	.section_header .content{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.section_header .right_hero_header{
+		width: 100%;
+	}
+	.section_header .left_hero_header{
+		max-width: 100%;
+		padding-right: 0;
+		margin-bottom: 100px;
+	}
+	.my_self{
+		text-align: center;
+	}
+	.clients_wrapper ul li{
+		width: 50%;
+	}
+	.fn_cs_portfolio .portfolio_list ul li{width: 50%;}
+}
+
 @media(max-width: 768px){
 	.fn_cs_portfolio .portfolio_list ul li{width: 100%;}
 }
@@ -2491,3 +2618,31 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 		height: inherit;
 	}
 }
+
+.cta-btn{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    color: #fff;
+    background: #3452fe;
+}
+
+.cta-btn:hover{
+	background: #fff;
+	color: #3452fe;
+}
+
+@media(max-width:550px){
+.cta-btn {
+      padding: 10px 7px;
+      border-radius: 8px;
+      font-size: 13px;
+
+    }
+  }
